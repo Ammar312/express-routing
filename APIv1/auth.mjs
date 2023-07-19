@@ -1,7 +1,7 @@
 import express from "express";
 const router = express.Router();
 
-router.get("/login", (req, res, next) => {
+router.post("/login", (req, res, next) => {
   console.log("This is login");
   res.send("This is login v1 " + new Date());
 });
